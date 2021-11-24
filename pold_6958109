@@ -1,0 +1,4 @@
+number of cores per node = 36
+number of cores per task = 1
+number of nodes for job = 2
+number of cores for job = 36

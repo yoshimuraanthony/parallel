@@ -1,0 +1,20 @@
+#! /bin/bash
+
+#SBATCH -o pout_%j
+#SBATCH -J rowSum
+#SBATCH --partition=pdebug
+#SBATCH --time=00:10:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=36
+#SBATCH --cpus-per-task=1
+#SBATCH --error=perr.err
+
+echo "number of cores per node = $SLURM_CPUS_ON_NODE"
+echo "number of nodes for job = $SLURM_JOB_NUM_NODES"
+echo "number of cores for job = $SLURM_NTASKS"
+echo "tasks per node = $SLURM_TASKS_PER_NODE"
+# nprocs=$(($SLURM_CPUS_ON_NODE * $SLURM_JOB_NUM_NODES))
+# echo "total cores used = $nprocs"
+
+# python ~/temp/test/parallel/sum.py $SLURM_NTASKS
+python ~/temp/test/parallel/sum.py

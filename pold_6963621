@@ -1,0 +1,6 @@
+number of cores per node = 36
+number of nodes for job = 1
+number of cores for job = 36
+tasks per node = 36
+36
+python detected 72 cpu's

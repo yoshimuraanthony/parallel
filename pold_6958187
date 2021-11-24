@@ -1,0 +1,5 @@
+number of cores per node = 36
+number of nodes for job = 2
+number of cores for job = 36
+tasks per node = 18(x2)
+total cores used = 72
