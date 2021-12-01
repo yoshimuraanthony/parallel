@@ -17,4 +17,5 @@ echo "tasks per node = $SLURM_TASKS_PER_NODE"
 # echo "total cores used = $nprocs"
 
 # python ~/temp/test/parallel/sum.py $SLURM_NTASKS
-python ~/temp/test/parallel/sum.py
+python ~/temp/test/parallel/multiarg.py $SLURM_NTASKS
+# python ~/temp/test/parallel/sum.py

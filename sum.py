@@ -29,7 +29,7 @@ def getSumAr(nrows, nvals, nprocs=8):
     rowSums = []
 
     with Pool(nprocs) as p:
-        ret=p.map(getRowSum,rows)
+        ret = p.map(getRowSum, rows)
     #for row in rows:
     #    rowSum = getRowSum(row)
     #    rowSums.append(rowSum)
